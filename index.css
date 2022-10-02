@@ -145,7 +145,8 @@
   }
   
   .tab-border {
-    border-bottom: var(--primary-color) 4px solid; /* var 用来插入自己定义的属性值（primary color 为自己新定义的颜色属性 */
+    border-bottom: var(--primary-color) 4px solid; /* var is used to insert user-defined properties ( properties I defined)（
+                                                    primary color is a new color property I defined */
   }
   
   /* Tab Content */
@@ -164,11 +165,11 @@
   }
   
   .show {
-    display: block !important; /* display 规定元素生成的框的类型。block：块级元素（前后带有换行符） */
-    opacity: 1 !important; /* opacity：不透明度 */
-    transition: all 1000 ease-in; /* transition: 为一个元素在不同状态之间切换的时候定义不同的过渡效果 */
+    display: block !important; /* display regulates the type of frame elements generate。block：block level property（with line break before and after） */
+    opacity: 1 !important; /* opacity：transparency level */
+    transition: all 1000 ease-in; /* transition: Define different transition effects for an element when switching between different states */
                                   /* property name | duration | timing function | delay */
-                                  /* ease - in : 以慢速度开始的过渡效果 */
+                                  /* ease - in : transition effect starts with slow speed */
   }
   
   #tab-1-content .tab-1-content-inner {
@@ -335,10 +336,11 @@
     margin-left: 1rem;
   }
   
-  @media (max-width: 960px) { /* @media 媒体查询：用于基于一个或多个 媒体查询 的结果来应用样式表的一部分
-                                 指定一个媒体查询和一个 CSS 块，当且仅当该媒体查询与正在使用其内容的设备匹配时，该 CSS 块才能应用于该文档 */
+  @media (max-width: 960px) { /* @media media qurey：Used to apply a portion of a style sheet based on the results of one or more media queries
+                                 Specifies a media query and a CSS block that can be applied to the document 
+                                 if and only if the media query matches the device that is using its content */
 
-    /* 该媒体条件达成后的执行样式表 */
+    /* ececute the following style table when media qurey criteria is met */
       .showcase {
       height: 70vh;
     }
