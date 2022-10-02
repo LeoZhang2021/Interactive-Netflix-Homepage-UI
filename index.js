@@ -2,16 +2,13 @@ const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 // Select tab content item
-function selectItem(e) { // e is a parameter stand for event 表示事件的形参
+function selectItem(e) { // e is a parameter stand for event
   // Remove all show and border classes
   removeBorder();
   removeShow();
-  // Add border to current tab item
-  this.classList.add('tab-border');
-  // Grab content item from DOM
-  const tabContentItem = document.querySelector(`#${this.id}-content`);
-  // Add show class
-  tabContentItem.classList.add('show');
+  this.classList.add('tab-border'); // Add border to current tab item
+  const tabContentItem = document.querySelector(`#${this.id}-content`); // Grab content item from DOM
+  tabContentItem.classList.add('show'); // Add show class
 }
 
 // Remove bottom borders from all tab items
